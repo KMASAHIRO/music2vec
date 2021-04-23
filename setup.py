@@ -5,8 +5,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="music2vec",
-    version="0.0.1",
-    install_requires=["tensorflow>=2.4.1","numpy>=1.19.5","scipy>=1.4.1","librosa>=0.8.0",],
+    version="0.0.2",
+    install_requires=["tensorflow>=2.4.1","numpy>=1.19.5","librosa>=0.8.0",],
     author="KMASAHIRO",
     description="music genre classification model based on SoundNet",
     long_description=long_description,
