@@ -7,3 +7,5 @@ SoundNetをベースにしたmusic2vecを用いた音楽ジャンルの分類(�
 また、学習前と学習後でモデル中のSoundNetの部分の出力を平坦化したものをPCAやt-SNEで可視化した。  
 music2vecディレクトリにはモデルの実装、学習を簡単にできるようにモジュールとしてまとめており、パッケージとして利用することが可能。  
 [Google Colaboratory](https://colab.research.google.com/drive/1TlhN6ZW9ytXwIsxFFB0fYdUSfuz5DwLz?usp=sharing)上にこれらを実行したものをまとめている(music2vec.ipynbと同じもの)。
+
+## 実行したPythonのバージョンと使用したパッケージ
