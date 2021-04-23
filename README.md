@@ -9,3 +9,11 @@ music2vecディレクトリにはモデルの実装、学習を簡単にでき�
 [Google Colaboratory](https://colab.research.google.com/drive/1TlhN6ZW9ytXwIsxFFB0fYdUSfuz5DwLz?usp=sharing)上にこれらを実行したものをまとめている(music2vec.ipynbと同じもの)。
 
 ## 実行したPythonのバージョンと使用したパッケージ
+
+- Python 3.7.10
+- Tensorflow 2.4.1
+- numpy 1.19.5
+- librosa 0.8.0
+
+## データの前処理
+[論文](https://arxiv.org/pdf/1610.09001.pdf)3ページ目の"2 Large Unlabeled Video Dataset"に従い、入力音源はサンプリングレート22050Hzにし、-256から256までの範囲の数値にした。
