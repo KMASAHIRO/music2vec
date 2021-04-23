@@ -12,7 +12,8 @@ def build_model():
     Builds up the SoundNet model and loads the weights from a given model file
     :return model: SoundNetのモデル
     """
-    model_weights = np.load('/content/music2vec/music2vec/sound8.npy', allow_pickle=True, encoding='bytes').item()
+
+    model_weights = np.load('./sound8.npy', allow_pickle=True, encoding='bytes').item()
 
     keys = list()
     for key in model_weights.keys():
