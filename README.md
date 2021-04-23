@@ -17,3 +17,8 @@ music2vecディレクトリにはモデルの実装、学習を簡単にでき�
 
 ## データの前処理
 [論文](https://arxiv.org/pdf/1610.09001.pdf)3ページ目の"2 Large Unlabeled Video Dataset"に従い、入力音源はサンプリングレート22050Hzにし、-256から256までの範囲の数値にした。
+
+## モデルの構成
+<img width="500" alt="article" src="https://user-images.githubusercontent.com/74399610/115914638-2ca15480-a4ad-11eb-9c66-c4eccfb0dfd5.png">
+
+[Rajat Hebbarの記事](https://medium.com/@rajatheb/music2vec-generating-vector-embedding-for-genre-classification-task-411187a20820)で紹介されている上の写真のモデルをもとに、下のモデルを作成した。
