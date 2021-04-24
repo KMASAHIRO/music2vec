@@ -16,7 +16,7 @@ music2vecディレクトリにはモデルの実装、学習を簡単にでき�
 - librosa 0.8.0
 
 ## データの前処理
-[論文](https://arxiv.org/pdf/1610.09001.pdf)3ページ目の"2 Large Unlabeled Video Dataset"に従い、入力音源はサンプリングレート22050Hzにし、-256から256までの範囲の数値にした。
+[SoundNetの論文](https://arxiv.org/pdf/1610.09001.pdf)3ページ目の"2 Large Unlabeled Video Dataset"に従い、入力音源はサンプリングレート22050Hzにし、-256から256までの範囲の数値にした。
 
 ## モデルの構成
 <img width="500" alt="article" src="https://user-images.githubusercontent.com/74399610/115914638-2ca15480-a4ad-11eb-9c66-c4eccfb0dfd5.png">
