@@ -22,3 +22,24 @@ music2vecディレクトリにはモデルの実装、学習を簡単にでき�
 <img width="500" alt="article" src="https://user-images.githubusercontent.com/74399610/115914638-2ca15480-a4ad-11eb-9c66-c4eccfb0dfd5.png">
 
 [Rajat Hebbarの記事](https://medium.com/@rajatheb/music2vec-generating-vector-embedding-for-genre-classification-task-411187a20820)で紹介されている上の写真のモデルをもとに、下のモデルを作成した。
+
+<img width="800" alt="model_architecture" src="https://user-images.githubusercontent.com/74399610/115947660-1d012a80-a504-11eb-8ed7-7c4d21b1adb4.png">
+
+SoundNetベースのCNNを実際のSoundNetに変えたのが主な変更点。  
+それによりCNNの層が増えて入力を長くする必要が出てきたため、入力サイズが大きくなった。
+
+## 結果と評価
+[GTZAN](http://opihi.cs.uvic.ca/sound/genres.tar.gz)に含まれる1000個の音楽データの内950個を訓練データとして学習させ、10epochs後と20epochs後に50個のテストデータで推論させて混同行列の作成とAccuracy・Precision・Recall・F1の求値を行った。
+
+<img width="1000" alt="confusion_matrix" src="https://user-images.githubusercontent.com/74399610/115947711-6e111e80-a504-11eb-8789-f03340e91bc2.png">
+
+ここで、Precision・Recall・F1の値は各ラベルごとの値をデータ数に応じて重み付けをして平均したものである。例えば、下のような混同行列であれば下の計算式によりPrecisionはおよそ0.58になる。
+
+<img width="500" alt="example_matrix" src="https://user-images.githubusercontent.com/74399610/115948752-001c2580-a50b-11eb-9920-dc2e00be8c48.png">
+
+<img width="300" alt="example_matrix_precision" src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cfrac%7B10%7D%7B19%7D%5Ctimes%5Cfrac%7B15%7D%7B50%7D%2B%5Cfrac%7B12%7D%7B18%7D%5Ctimes%5Cfrac%7B25%7D%7B50%7D%2B%5Cfrac%7B6%7D%7B13%7D%5Ctimes%5Cfrac%7B10%7D%7B50%7D%5Cfallingdotseq0.58%0A%5Cend%7Balign%2A%7D%0A" 
+alt="\begin{align*}
+\frac{10}{19}\times\frac{15}{50}+\frac{12}{18}\times\frac{25}{50}+\frac{6}{13}\times\frac{10}{50}\fallingdotseq0.58
+\end{align*}
+">
