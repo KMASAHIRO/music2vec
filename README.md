@@ -45,6 +45,6 @@ alt="\begin{align*}
 ">
 
 また、学習前と学習後でモデル中のSoundNetの部分の出力を平坦化したものをPCAやt-SNEで可視化した。
-学習後ではt-SNEでジャンルごとに分離されていることがわかる。特にclassicalやmetalはよく分離されている。
+学習後ではt-SNEでジャンルごとにある程度分離されていることがわかる。特にclassicalやmetalはよく分離されている。
 
 <img width="1000" alt="analysis" src="https://user-images.githubusercontent.com/74399610/115950670-abcb7280-a517-11eb-985c-2f72063b5d45.png">
