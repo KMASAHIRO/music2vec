@@ -16,7 +16,7 @@ music2vecディレクトリにはモデルの実装、学習を簡単にでき�
 - librosa 0.8.0
 
 ## データの前処理
-[論文](https://arxiv.org/pdf/1610.09001.pdf)3ページ目の"2 Large Unlabeled Video Dataset"に従い、入力音源はサンプリングレート22050Hzにし、-256から256までの範囲の数値にした。
+[SoundNetの論文](https://arxiv.org/pdf/1610.09001.pdf)3ページ目の"2 Large Unlabeled Video Dataset"に従い、入力音源はサンプリングレート22050Hzにし、-256から256までの範囲の数値にした。
 
 ## モデルの構成
 <img width="500" alt="article" src="https://user-images.githubusercontent.com/74399610/115914638-2ca15480-a4ad-11eb-9c66-c4eccfb0dfd5.png">
@@ -43,3 +43,8 @@ alt="\begin{align*}
 \frac{10}{19}\times\frac{15}{50}+\frac{12}{18}\times\frac{25}{50}+\frac{6}{13}\times\frac{10}{50}\fallingdotseq0.58
 \end{align*}
 ">
+
+また、学習前と学習後でモデル中のSoundNetの部分の出力を平坦化したものをPCAやt-SNEで可視化した。
+学習後ではt-SNEでジャンルごとにある程度分離されていることがわかる。特にclassicalやmetalはよく分離されている。
+
+<img width="1000" alt="analysis" src="https://user-images.githubusercontent.com/74399610/115950670-abcb7280-a517-11eb-985c-2f72063b5d45.png">
