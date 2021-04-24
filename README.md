@@ -31,7 +31,7 @@ SoundNetベースのCNNを実際のSoundNetに変えたのが主な変更点。
 ## 結果と評価
 [GTZAN](http://opihi.cs.uvic.ca/sound/genres.tar.gz)に含まれる1000個の音楽データの内950個を訓練データとして学習させ、10epochs後と20epochs後に50個のテストデータで推論させて混同行列の作成とAccuracy・Precision・Recall・F1の求値を行った。
 
-<img width="1000" alt="confusion_matrix" src="https://user-images.githubusercontent.com/74399610/115947711-6e111e80-a504-11eb-8789-f03340e91bc2.png">
+<img width="1000" alt="confusion_matrix" src="https://user-images.githubusercontent.com/74399610/115959992-fe258700-a549-11eb-9407-1bb266025b9b.png">
 
 ここで、Precision・Recall・F1の値は各ラベルごとの値をデータ数に応じて重み付けをして平均したものである。例えば、下のような混同行列であれば下の計算式によりPrecisionはおよそ0.58になる。
 
