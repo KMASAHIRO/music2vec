@@ -43,3 +43,8 @@ alt="\begin{align*}
 \frac{10}{19}\times\frac{15}{50}+\frac{12}{18}\times\frac{25}{50}+\frac{6}{13}\times\frac{10}{50}\fallingdotseq0.58
 \end{align*}
 ">
+
+また、学習前と学習後でモデル中のSoundNetの部分の出力を平坦化したものをPCAやt-SNEで可視化した。
+学習後ではt-SNEでジャンルごとに分離されていることがわかる。特にclassicalやmetalはよく分離されている。
+
+<img width="1000" alt="analysis" src="https://user-images.githubusercontent.com/74399610/115950670-abcb7280-a517-11eb-985c-2f72063b5d45.png">
